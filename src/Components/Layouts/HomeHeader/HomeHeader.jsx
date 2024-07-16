@@ -6,6 +6,7 @@ export const HomeHeader = ({ styles, onSearch }) => {
   const searchInput = (event) => {
     const searchTerm = event.target.value;
     setSearch(searchTerm);
+    onSearch(searchTerm)
   };
 
   return (
